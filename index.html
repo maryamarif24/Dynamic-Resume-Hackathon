@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Responsive Resume Builder</h1>
+        <div id="resumeForm" class="form-container">
+            <label for="profilePhoto">Profile Photo:</label>
+            <input id="profilePhoto" type="file" accept="image/*"><br>
+
+            <label for="fullName">Full Name:</label>
+            <input id="fullName" type="text" placeholder="Full Name" required><br>
+
+            <label for="email">Email:</label>
+            <input id="email" type="email" placeholder="Email" required><br>
+
+            <label for="phone">Phone:</label>
+            <input id="phone" type="tel" placeholder="Phone" required><br>
+
+            <label for="summary">Summary:</label>
+            <textarea id="summary" placeholder="Summary" required></textarea><br>
+
+            <label for="experience">Experience:</label>
+            <textarea id="experience" placeholder="Experience" required></textarea><br>
+
+            <label for="skills">Skills:</label>
+            <textarea id="skills" placeholder="Skills" required></textarea><br>
+
+            <button id="generateResumeButton" type="button">Generate Resume</button>
+            <button id="printResumeButton" type="button">Print Resume</button>
+        </div>
+
+        <!-- Resume Preview Modal -->
+        <div id="resumeModal" class="resume-modal">
+            <div class="modal-content">
+                <span id="closeModal" class="close-button">&times;</span>
+                <div id="resumeOutput" class="resume-output"></div>
+                <button id="printResumeButtonModal" type="button">Print Resume</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
